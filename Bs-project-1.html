@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="Shortcut Icon" href="/JS.COURSE.HTML/images/img-1.png" />
+    <title>Website using html and bootstrap</title>
+    <style>
+        .navbar-brand {
+            font-family: fantasy;
+            font-size: 25px;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0%;
+            left: 0%;
+            right: 0%;
+            z-index: 1;
+            box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+        }
+
+        .nav-link {
+            font-size: 18px;
+        }
+
+        .carousel-item {
+            height: 500px;
+        }
+
+        .card:hover {
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .shirt-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><span class="text-success">Happy</span> Shophy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Web Devlopment</a></li>
+                            <li><a class="dropdown-item" href="#">App Devlopment</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdn.shopify.com/s/files/1/0070/7032/files/trending-products_c8d0d15c-9afc-47e3-9ba2-f7bad0505b9b.png?format=jpg&quality=90&v=1614559651"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/apple-presidents-day-sale-index-1645030232.png"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.apple.com/newsroom/images/values/community-outreach/apple_world-aids-day-2020_hero_12012020.jpg.landing-big_2x.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 230px;">
+                    <img src="https://www.pngplay.com/wp-content/uploads/6/Free-Shipping-Green-Bus-Transparent-PNG.png"
+                        class="card-img-top" alt="card-img-1">
+
+                    <button type="button" class="btn btn-primary text-changes" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" data-modal="Free Shippings" style="width: 140px; margin: auto;">
+                        Free Shippings
+                    </button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Free Shippings</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Woo-hoo, you're reading this text in a modal!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 230px;">
+                    <img src="https://www.dominos.co.in/theme2/front/images/home/order-online.png" class="card-img-top"
+                        alt="card-img-1">
+                    <button type="button" class="btn btn-primary text-changes" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal-2" data-modal="Online Order" style="width: 140px; margin: auto;">
+                        Online Order
+                    </button>
+
+                    <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Online Order</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Woo-hoo, you're reading this text in a modal!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 230px;">
+                    <img src="https://static.vecteezy.com/system/resources/previews/002/283/140/original/people-save-money-in-a-large-piggy-bank-free-vector.jpg"
+                        class="card-img-top" alt="card-img-1">
+                    <button type="button" class="btn btn-primary text-changes" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal-3" data-modal="Save Money" style="width: 140px; margin: auto;">
+                        Save Money
+                    </button>
+
+                    <div class="modal fade" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Save Money</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Woo-hoo, you're reading this text in a modal!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 230px;">
+                    <img src="https://www.svgrepo.com/show/343840/social-media-branding-advertising-promotion.svg"
+                        class="card-img-top" alt="card-img-1">
+                    <button type="button" class="btn btn-primary text-changes" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal-4" data-modal="Promotion" style="width: 140px; margin: auto;">
+                        Promotion
+                    </button>
+
+                    <div class="modal fade" id="exampleModal-4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Promotion</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Woo-hoo, you're reading this text in a modal!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 230px;">
+                    <img src="https://img.freepik.com/premium-vector/happy-shopper-male-shopper-raising-hands-with-shopping-bags-illustration-isolated-white-background-big-sale-shopping-during-crazy-sales-discounts_125133-982.jpg?w=2000"
+                        class="card-img-top" alt="card-img-1">
+                    <button type="button" class="btn btn-primary text-changes" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal-5" data-modal="Happy Selling" style="width: 140px; margin: auto;">
+                        Happy Selling
+                    </button>
+
+                    <div class="modal fade" id="exampleModal-5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Happy Selling</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Woo-hoo, you're reading this text in a modal!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 230px;">
+                    <img src="https://img.lovepik.com/element/45007/5147.png_860.png" class="card-img-top"
+                        alt="card-img-1">
+                    <button type="button" class="btn btn-primary text-changes" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal-6" data-modal="Our Support" style="width: 140px; margin: auto;">
+                        Our Support
+                    </button>
+
+                    <div class="modal fade" id="exampleModal-6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Our Support</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Woo-hoo, you're reading this text in a modal!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="heading text-center mt-5" style="font-family: Raleway, sans-serif;">
+        <h1 style="letter-spacing: 4px;">Our some products</h1>
+        <p style="letter-spacing: 3px; color: #8e8c8c; font-size: 15px;">Summer Collections New Design</p>
+    </div>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 310px;">
+                    <img src="https://contents.mediadecathlon.com/p1484240/k$ab565f3675dbdd7e3c486175e2c16583/men-trekking-long-sleeved-shirt-forclaz-travel-100-warm-red.jpg?&f=x"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="decription">
+                            <p style=" margin-bottom: 0%;">Adidas</p>
+                            <p style="margin-top: 0%; margin-bottom: 0%;">Best Cotton Shirt</p>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <div class="shirt-bottom">
+                                <p style=" margin-top: 10%;">1000 Rs</p>
+                                <a href=""
+                                    style="background-color: #58b7b177; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border-radius: 100px; color: #000; border: 1px solid #58b7b177;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 310px;">
+                    <img src="https://contents.mediadecathlon.com/p2350032/ec52baefd791ef5a6a5bdcdbf14b831b/p2350032.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="decription">
+                            <p style=" margin-bottom: 0%;">Adidas</p>
+                            <p style="margin-top: 0%; margin-bottom: 0%;">Best Cotton Shirt</p>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <div class="shirt-bottom">
+                                <p style=" margin-top: 10%;">1000 Rs</p>
+                                <a href=""
+                                    style="background-color: #58b7b177; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border-radius: 100px; color: #000; border: 1px solid #58b7b177;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 310px;">
+                    <img src="https://4.imimg.com/data4/OX/VM/MY-35263749/men-s-casual-shirt-500x500.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="decription">
+                            <p style=" margin-bottom: 0%;">Adidas</p>
+                            <p style="margin-top: 0%; margin-bottom: 0%;">Best Cotton Shirt</p>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <div class="shirt-bottom">
+                                <p style=" margin-top: 10%;">1000 Rs</p>
+                                <a href=""
+                                    style="background-color: #58b7b177; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border-radius: 100px; color: #000; border: 1px solid #58b7b177;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 310px;">
+                    <img src="https://m.media-amazon.com/images/I/41-yICSH4RL._SX425_.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <div class="decription">
+                            <p style=" margin-bottom: 0%;">Adidas</p>
+                            <p style="margin-top: 0%; margin-bottom: 0%;">Best Cotton Shirt</p>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <div class="shirt-bottom">
+                                <p style=" margin-top: 10%;">1000 Rs</p>
+                                <a href=""
+                                    style="background-color: #58b7b177; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border-radius: 100px; color: #000; border: 1px solid #58b7b177;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 310px;">
+                    <img src="https://5.imimg.com/data5/QH/QF/MY-53916936/men-stylish-shirt-500x500.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="decription">
+                            <p style=" margin-bottom: 0%;">Adidas</p>
+                            <p style="margin-top: 0%; margin-bottom: 0%;">Best Cotton Shirt</p>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <div class="shirt-bottom">
+                                <p style=" margin-top: 10%;">1000 Rs</p>
+                                <a href=""
+                                    style="background-color: #58b7b177; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border-radius: 100px; color: #000; border: 1px solid #58b7b177;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 310px;">
+                    <img src="https://cdn.shopify.com/s/files/1/1002/7150/products/New-Mockups---no-hanger---TShirt-Yellow.jpg?v=1639657077"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="decription">
+                            <p style=" margin-bottom: 0%;">Adidas</p>
+                            <p style="margin-top: 0%; margin-bottom: 0%;">Best Cotton Shirt</p>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <div class="shirt-bottom">
+                                <p style=" margin-top: 10%;">1000 Rs</p>
+                                <a href=""
+                                    style="background-color: #58b7b177; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border-radius: 100px; color: #000; border: 1px solid #58b7b177;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 310px;">
+                    <img src="https://i.ebayimg.com/images/g/Y94AAOSwg4Bj~sKb/s-l1600.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <div class="decription">
+                            <p style=" margin-bottom: 0%;">Adidas</p>
+                            <p style="margin-top: 0%; margin-bottom: 0%;">Best Cotton Shirt</p>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <div class="shirt-bottom">
+                                <p style=" margin-top: 10%;">1000 Rs</p>
+                                <a href=""
+                                    style="background-color: #58b7b177; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border-radius: 100px; color: #000; border: 1px solid #58b7b177;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 310px;">
+                    <img src="https://4.imimg.com/data4/GI/LK/MY-27582812/men-s-half-pant-500x500.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="decription">
+                            <p style=" margin-bottom: 0%;">Adidas</p>
+                            <p style="margin-top: 0%; margin-bottom: 0%;">Best Cotton Shirt</p>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <div class="shirt-bottom">
+                                <p style=" margin-top: 10%;">1000 Rs</p>
+                                <a href=""
+                                    style="background-color: #58b7b177; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border-radius: 100px; color: #000; border: 1px solid #58b7b177;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 310px;">
+                    <img src="https://ae01.alicdn.com/kf/HTB1_xAXbEGF3KVjSZFmq6zqPXXaG/HOT-Men-Half-Pants-Multi-pockets-Loose-Breathable-Male-Casual-Pants-for-Summer-19ING.jpg_Q90.jpg_.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="decription">
+                            <p style=" margin-bottom: 0%;">Adidas</p>
+                            <p style="margin-top: 0%; margin-bottom: 0%;">Best Cotton Shirt</p>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <div class="shirt-bottom">
+                                <p style=" margin-top: 10%;">1000 Rs</p>
+                                <a href=""
+                                    style="background-color: #58b7b177; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border-radius: 100px; color: #000; border: 1px solid #58b7b177;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 310px;">
+                    <img src="https://img.joomcdn.net/b0fdf8eda5dd2da4b8d8a1d29b259832bbfc2fa4_original.jpeg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="decription">
+                            <p style=" margin-bottom: 0%;">Adidas</p>
+                            <p style="margin-top: 0%; margin-bottom: 0%;">Best Cotton Shirt</p>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <div class="shirt-bottom">
+                                <p style=" margin-top: 10%;">1000 Rs</p>
+                                <a href=""
+                                    style="background-color: #58b7b177; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border-radius: 100px; color: #000; border: 1px solid #58b7b177;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 310px;">
+                    <img src="https://img.fruugo.com/product/1/54/194176541_max.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="decription">
+                            <p style=" margin-bottom: 0%;">Adidas</p>
+                            <p style="margin-top: 0%; margin-bottom: 0%;">Best Cotton Shirt</p>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <div class="shirt-bottom">
+                                <p style=" margin-top: 10%;">1000 Rs</p>
+                                <a href=""
+                                    style="background-color: #58b7b177; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border-radius: 100px; color: #000; border: 1px solid #58b7b177;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 310px;">
+                    <img src="https://4.imimg.com/data4/II/CU/MY-19319311/half-pant-500x500.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <div class="decription">
+                            <p style=" margin-bottom: 0%;">Adidas</p>
+                            <p style="margin-top: 0%; margin-bottom: 0%;">Best Cotton Shirt</p>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <div class="shirt-bottom">
+                                <p style=" margin-top: 10%;">1000 Rs</p>
+                                <a href=""
+                                    style="background-color: #58b7b177; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border-radius: 100px; color: #000; border: 1px solid #58b7b177;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 310px;">
+                    <img src="https://weboita.com/uploads/collections/mens-half-pant-500x500.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <div class="decription">
+                            <p style=" margin-bottom: 0%;">Adidas</p>
+                            <p style="margin-top: 0%; margin-bottom: 0%;">Best Cotton Shirt</p>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <div class="shirt-bottom">
+                                <p style=" margin-top: 10%;">1000 Rs</p>
+                                <a href=""
+                                    style="background-color: #58b7b177; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border-radius: 100px; color: #000; border: 1px solid #58b7b177;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 310px;">
+                    <img src="https://static-01.shop.com.mm/p/84abe058eb7843ddd313d7d1bd966d3f.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <div class="decription">
+                            <p style=" margin-bottom: 0%;">Adidas</p>
+                            <p style="margin-top: 0%; margin-bottom: 0%;">Best Cotton Shirt</p>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <div class="shirt-bottom">
+                                <p style=" margin-top: 10%;">1000 Rs</p>
+                                <a href=""
+                                    style="background-color: #58b7b177; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border-radius: 100px; color: #000; border: 1px solid #58b7b177;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 310px;">
+                    <img src="https://cdn.shopify.com/s/files/1/0441/1142/9796/products/il_fullxfull.2995387018_gbb7_ad348ab0-6ed4-4aa8-b27b-e2e0b0b3336b_1200x1200.jpg?v=1630683840"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="decription">
+                            <p style=" margin-bottom: 0%;">Adidas</p>
+                            <p style="margin-top: 0%; margin-bottom: 0%;">Best Cotton Shirt</p>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <div class="shirt-bottom">
+                                <p style=" margin-top: 10%;">1000 Rs</p>
+                                <a href=""
+                                    style="background-color: #58b7b177; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border-radius: 100px; color: #000; border: 1px solid #58b7b177;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 310px;">
+                    <img src="https://redbridgejeans.de/media/image/product/68475/lg/m4256_red-bridge-herren-jogger-denim-cargo-hose-colored-jeans-jeanshose-schmales-bein-m4256_96.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="decription">
+                            <p style=" margin-bottom: 0%;">Adidas</p>
+                            <p style="margin-top: 0%; margin-bottom: 0%;">Best Cotton Shirt</p>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <div class="shirt-bottom">
+                                <p style=" margin-top: 10%;">1000 Rs</p>
+                                <a href=""
+                                    style="background-color: #58b7b177; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border-radius: 100px; color: #000; border: 1px solid #58b7b177;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 310px;">
+                    <img src="https://5.imimg.com/data5/XW/JO/NX/SELLER-99145547/men-jogger-500x500.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="decription">
+                            <p style=" margin-bottom: 0%;">Adidas</p>
+                            <p style="margin-top: 0%; margin-bottom: 0%;">Best Cotton Shirt</p>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <div class="shirt-bottom">
+                                <p style=" margin-top: 10%;">1000 Rs</p>
+                                <a href=""
+                                    style="background-color: #58b7b177; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border-radius: 100px; color: #000; border: 1px solid #58b7b177;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 310px;">
+                    <img src="https://img2.exportersindia.com/product_images/bc-full/2020/7/6614656/mens-pants-1595913808-5535293.jpeg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="decription">
+                            <p style=" margin-bottom: 0%;">Adidas</p>
+                            <p style="margin-top: 0%; margin-bottom: 0%;">Best Cotton Shirt</p>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <div class="shirt-bottom">
+                                <p style=" margin-top: 10%;">1000 Rs</p>
+                                <a href=""
+                                    style="background-color: #58b7b177; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border-radius: 100px; color: #000; border: 1px solid #58b7b177;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 310px;">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2020/8/HG/WF/ML/7025672/cotton-trouser-500x500.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="decription">
+                            <p style=" margin-bottom: 0%;">Adidas</p>
+                            <p style="margin-top: 0%; margin-bottom: 0%;">Best Cotton Shirt</p>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <div class="shirt-bottom">
+                                <p style=" margin-top: 10%;">1000 Rs</p>
+                                <a href=""
+                                    style="background-color: #58b7b177; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border-radius: 100px; color: #000; border: 1px solid #58b7b177;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 310px;">
+                    <img src="https://down-my.img.susercontent.com/file/3e9765e9e891dcd1cbec97c227efad17"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="decription">
+                            <p style=" margin-bottom: 0%;">Adidas</p>
+                            <p style="margin-top: 0%; margin-bottom: 0%;">Best Cotton Shirt</p>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <div class="shirt-bottom">
+                                <p style=" margin-top: 10%;">1000 Rs</p>
+                                <a href=""
+                                    style="background-color: #58b7b177; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border-radius: 100px; color: #000; border: 1px solid #58b7b177;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 310px;">
+                    <img src="https://m.media-amazon.com/images/S/aplus-media/sc/b787ae60-2496-4c6c-9704-9b23f4487be3.__CR0,0,1001,1001_PT0_SX300_V1___.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="decription">
+                            <p style=" margin-bottom: 0%;">Adidas</p>
+                            <p style="margin-top: 0%; margin-bottom: 0%;">Best Cotton Shirt</p>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <div class="shirt-bottom">
+                                <p style=" margin-top: 10%;">1000 Rs</p>
+                                <a href=""
+                                    style="background-color: #58b7b177; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border-radius: 100px; color: #000; border: 1px solid #58b7b177;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 310px;">
+                    <img src="https://cf.shopee.com.my/file/5efd9270a07d0c1a41137a707b6ed650_tn" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <div class="decription">
+                            <p style=" margin-bottom: 0%;">Adidas</p>
+                            <p style="margin-top: 0%; margin-bottom: 0%;">Best Cotton Shirt</p>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <div class="shirt-bottom">
+                                <p style=" margin-top: 10%;">1000 Rs</p>
+                                <a href=""
+                                    style="background-color: #58b7b177; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border-radius: 100px; color: #000; border: 1px solid #58b7b177;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 310px;">
+                    <img src="https://static-01.daraz.com.bd/p/048e026f31e2a181b072ecb68fdb5c7e.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="decription">
+                            <p style=" margin-bottom: 0%;">Adidas</p>
+                            <p style="margin-top: 0%; margin-bottom: 0%;">Best Cotton Shirt</p>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <div class="shirt-bottom">
+                                <p style=" margin-top: 10%;">1000 Rs</p>
+                                <a href=""
+                                    style="background-color: #58b7b177; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border-radius: 100px; color: #000; border: 1px solid #58b7b177;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 col-lg-2">
+                <div class="card mx-auto" style="width: 11rem; height: 310px;">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2021/10/FZ/NC/ZS/128067056/cargo-short.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="decription">
+                            <p style=" margin-bottom: 0%;">Adidas</p>
+                            <p style="margin-top: 0%; margin-bottom: 0%;">Best Cotton Shirt</p>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <i class="fa-solid fa-star" style="color: goldenrod;"></i>
+                            <div class="shirt-bottom">
+                                <p style=" margin-top: 10%;">1000 Rs</p>
+                                <a href=""
+                                    style="background-color: #58b7b177; padding-right: 10px; padding-left: 10px; padding-bottom: 5px; padding-top: 5px; border-radius: 100px; color: #000; border: 1px solid #58b7b177;"><i
+                                        class="fa-sharp fa-solid fa-cart-shopping"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="repair-bg mt-5">
+        <div class="repair-services">
+            <img src="http://127.0.0.1:5500/JS.COURSE.HTML/images/img-15.png" class="d-block w-100" alt="repair-bg">
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
